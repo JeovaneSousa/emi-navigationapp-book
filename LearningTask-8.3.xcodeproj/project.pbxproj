@@ -21,7 +21,7 @@
 		5840B55B2864643F000FA9FC /* LivrosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840B55A2864643F000FA9FC /* LivrosListViewController.swift */; };
 		5840B55E2864660F000FA9FC /* LivroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840B55D2864660F000FA9FC /* LivroCollectionViewCell.swift */; };
 		5840B5602864669C000FA9FC /* LivroSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840B55F2864669C000FA9FC /* LivroSectionHeaderView.swift */; };
-		D98D1731293943D100500037 /* LivroSelecionadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D1730293943D100500037 /* LivroSelecionadoViewController.swift */; };
+		D98D1731293943D100500037 /* ComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D1730293943D100500037 /* ComprasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		5840B55A2864643F000FA9FC /* LivrosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivrosListViewController.swift; sourceTree = "<group>"; };
 		5840B55D2864660F000FA9FC /* LivroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroCollectionViewCell.swift; sourceTree = "<group>"; };
 		5840B55F2864669C000FA9FC /* LivroSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroSectionHeaderView.swift; sourceTree = "<group>"; };
-		D98D1730293943D100500037 /* LivroSelecionadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroSelecionadoViewController.swift; sourceTree = "<group>"; };
+		D98D1730293943D100500037 /* ComprasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		5840B55528646377000FA9FC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D98D172F2939439200500037 /* LivroSelecionado */,
+				D98D172F2939439200500037 /* Compras */,
 				5840B55928646428000FA9FC /* ListaDeLivros */,
 			);
 			path = Scenes;
@@ -158,13 +158,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D98D172F2939439200500037 /* LivroSelecionado */ = {
+		D98D172F2939439200500037 /* Compras */ = {
 			isa = PBXGroup;
 			children = (
 				D98D17332939449900500037 /* View */,
-				D98D1730293943D100500037 /* LivroSelecionadoViewController.swift */,
+				D98D1730293943D100500037 /* ComprasViewController.swift */,
 			);
-			path = LivroSelecionado;
+			path = Compras;
 			sourceTree = "<group>";
 		};
 		D98D17332939449900500037 /* View */ = {
@@ -245,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98D1731293943D100500037 /* LivroSelecionadoViewController.swift in Sources */,
+				D98D1731293943D100500037 /* ComprasViewController.swift in Sources */,
 				5840B551286462C0000FA9FC /* Autor.swift in Sources */,
 				583A3A0828784C57002C6288 /* CarrinhoSectionHeaderView.swift in Sources */,
 				5840B553286462D4000FA9FC /* Livro.swift in Sources */,

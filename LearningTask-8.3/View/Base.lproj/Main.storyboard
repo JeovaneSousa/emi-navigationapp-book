@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-7" y="198"/>
         </scene>
-        <!--Livro Selecionado View Controller-->
+        <!--Compras View Controller-->
         <scene sceneID="QMk-C6-wJe">
             <objects>
-                <viewController id="P6T-qP-fUx" customClass="LivroSelecionadoViewController" customModule="LearningTask_8_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P6T-qP-fUx" customClass="ComprasViewController" customModule="LearningTask_8_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GHg-6s-LvU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,22 +141,22 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="b5o-oh-0LD" userLabel="Labels Stack View">
                                                 <rect key="frame" x="20" y="20" width="234.5" height="180"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&lt;Definido pelo titulo do livro&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h76-pZ-Pno" userLabel="Titulo Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="81.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Definido pelo titulo do livro&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="h76-pZ-Pno" userLabel="Titulo Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="62.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Definido pelo subtitulo do livro&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBq-1u-KUx" userLabel="Subtitulo Label">
-                                                        <rect key="frame" x="0.0" y="93.5" width="234.5" height="53"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="&lt;Definido pelo subtitulo do livro&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="QBq-1u-KUx" userLabel="Subtitulo Label">
+                                                        <rect key="frame" x="0.0" y="74.5" width="234.5" height="72"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Definido pelo nome do autor&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T31-Xm-stK" userLabel="Nome do Autor Label">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="&lt;Definido pelo nome do autor&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T31-Xm-stK" userLabel="Nome do Autor Label">
                                                         <rect key="frame" x="0.0" y="158.5" width="234.5" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -170,6 +170,9 @@
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="Pampas"/>
+                                        <constraints>
+                                            <constraint firstItem="lPP-eA-wG9" firstAttribute="top" secondItem="4Ay-b4-0Ss" secondAttribute="top" constant="20" symbolic="YES" id="bzb-jU-R14"/>
+                                        </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0gH-RG-JCM" userLabel="Precos Stack View">
@@ -315,6 +318,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fg4-ah-aOQ"/>
+                    <connections>
+                        <outlet property="capaDoLivroImageView" destination="lPP-eA-wG9" id="CCB-pS-b3r"/>
+                        <outlet property="nomeDoAutorLabel" destination="T31-Xm-stK" id="y3D-jg-C1I"/>
+                        <outlet property="primeiroPrecoLabel" destination="Gjm-fF-ti9" id="Hdh-JJ-P4W"/>
+                        <outlet property="primeiroTipoLabel" destination="bQH-4e-uZX" id="K0K-j2-fch"/>
+                        <outlet property="segundoPrecoLabel" destination="gE7-aJ-x3b" id="mZT-E6-TCj"/>
+                        <outlet property="segundoTipoLabel" destination="M2A-nB-94Y" id="sfO-Pb-3VH"/>
+                        <outlet property="subtituloLivroLabel" destination="QBq-1u-KUx" id="fdp-4z-u7g"/>
+                        <outlet property="terceiroPrecoLabel" destination="wuW-Yr-OTA" id="U1w-gj-Dzh"/>
+                        <outlet property="terceiroTipoLabel" destination="wwe-Nu-5eU" id="3zb-wB-Q05"/>
+                        <outlet property="tituloLivroLabel" destination="h76-pZ-Pno" id="4rt-Uq-BKn"/>
+                    </connections>
                 </viewController>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="PIT-Je-zfE">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>

@@ -28,6 +28,16 @@ class LivrosListViewController: UICollectionViewController {
         guard let livrosAPI = livrosAPI else { return }
         livros = livrosAPI.carregaTodos()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "LivroSelecionadoSegue" else {return}
+        
+        guard let cell = sender as? LivroCollectionViewCell,
+              let destination = segue.destination as? ComprasViewController else{
+            fatalError("Unable to acquire necessary data to complete segue.")
+        }
+        destination.livro = cell.livro
+    }
 
 }
 
