@@ -9,12 +9,25 @@ import Foundation
 
 struct Livro {
     let titulo: String
+    let subtitulo: String
     let imagemDeCapaURI: String
     let autor: Autor?
+    let precos: [Preco]
     
-    init(titulo: String, imagemDeCapaURI: String, autor: Autor? = nil) {
+    init(titulo: String, subtitulo: String, imagemDeCapaURI: String, autor: Autor? = nil, precos: [Preco]) {
         self.titulo = titulo
         self.imagemDeCapaURI = imagemDeCapaURI
         self.autor = autor
+        self.subtitulo = subtitulo
+        self.precos = precos
+    }
+}
+
+struct Preco {
+    let valor: Decimal
+    let tipoDeLivro: TipoDeLivro
+    
+    enum TipoDeLivro {
+        case ebook, impresso, combo
     }
 }
