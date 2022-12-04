@@ -46,14 +46,14 @@ class ComprasViewController: UIViewController {
     
     private func setupBody(){
         guard let livro = livro else {return}
+        
         primeiroTipoLabel.text = livro.precos[0].texto
-        primeiroPrecoLabel.text = livro.precos[0].valorFormatado
+        primeiroPrecoLabel.text = livro.precos[0].valor.convertToStringBrCurrency
         
         segundoTipoLabel.text = livro.precos[1].texto
-        segundoPrecoLabel.text = livro.precos[1].valorFormatado
+        segundoPrecoLabel.text = livro.precos[1].valor.convertToStringBrCurrency
         
         terceiroTipoLabel.text = livro.precos[2].texto
-        terceiroPrecoLabel.text = livro.precos[2].valorFormatado
-    }
+        terceiroPrecoLabel.text = livro.precos[2].valor.convertToStringBrCurrency    }
 
 }

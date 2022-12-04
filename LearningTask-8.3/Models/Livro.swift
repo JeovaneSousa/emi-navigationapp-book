@@ -27,16 +27,16 @@ struct Preco {
     let valor: Decimal
     let tipoDeLivro: TipoDeLivro
     
-    var valorFormatado: String {
-        switch tipoDeLivro {
-        case .ebook:
-            return "R$ \(self.valor)0"
-        case .impresso:
-            return "R$ \(self.valor)0"
-        case .combo:
-            return "R$ \(self.valor)0"
-        }
-    }
+//    var valorFormatado: String {
+//        switch tipoDeLivro {
+//        case .ebook:
+//            return "R$ \(self.valor)0"
+//        case .impresso:
+//            return "R$ \(self.valor)0"
+//        case .combo:
+//            return "R$ \(self.valor)0"
+//        }
+//    }
     var texto: String {
         switch tipoDeLivro {
         case .ebook:

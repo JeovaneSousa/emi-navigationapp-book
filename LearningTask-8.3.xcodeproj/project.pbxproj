@@ -22,6 +22,7 @@
 		5840B55E2864660F000FA9FC /* LivroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840B55D2864660F000FA9FC /* LivroCollectionViewCell.swift */; };
 		5840B5602864669C000FA9FC /* LivroSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840B55F2864669C000FA9FC /* LivroSectionHeaderView.swift */; };
 		D98D1731293943D100500037 /* ComprasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D1730293943D100500037 /* ComprasViewController.swift */; };
+		D9A15BC3293A94E5000CCAC9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A15BC2293A94E5000CCAC9 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5840B55D2864660F000FA9FC /* LivroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroCollectionViewCell.swift; sourceTree = "<group>"; };
 		5840B55F2864669C000FA9FC /* LivroSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroSectionHeaderView.swift; sourceTree = "<group>"; };
 		D98D1730293943D100500037 /* ComprasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasViewController.swift; sourceTree = "<group>"; };
+		D9A15BC2293A94E5000CCAC9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		5840B53528646180000FA9FC /* LearningTask-8.3 */ = {
 			isa = PBXGroup;
 			children = (
+				D9A15BC1293A94C6000CCAC9 /* Formatter */,
 				5840B55828646384000FA9FC /* Supportive Files */,
 				5840B53F28646186000FA9FC /* Assets.xcassets */,
 				5840B55728646381000FA9FC /* API */,
@@ -174,6 +177,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D9A15BC1293A94C6000CCAC9 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				D9A15BC2293A94E5000CCAC9 /* Formatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98D1731293943D100500037 /* ComprasViewController.swift in Sources */,
+				D9A15BC3293A94E5000CCAC9 /* Formatter.swift in Sources */,
 				5840B551286462C0000FA9FC /* Autor.swift in Sources */,
 				583A3A0828784C57002C6288 /* CarrinhoSectionHeaderView.swift in Sources */,
 				5840B553286462D4000FA9FC /* Livro.swift in Sources */,
