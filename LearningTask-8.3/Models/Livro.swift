@@ -27,18 +27,14 @@ struct Preco {
     let valor: Decimal
     let tipoDeLivro: TipoDeLivro
     
-//    var valorFormatado: String {
-//        switch tipoDeLivro {
-//        case .ebook:
-//            return "R$ \(self.valor)0"
-//        case .impresso:
-//            return "R$ \(self.valor)0"
-//        case .combo:
-//            return "R$ \(self.valor)0"
-//        }
-//    }
+
+}
+
+enum TipoDeLivro{
+    case ebook, impresso, combo
+    
     var texto: String {
-        switch tipoDeLivro {
+        switch self {
         case .ebook:
             return "E-book*"
         case .impresso:
@@ -47,8 +43,19 @@ struct Preco {
             return "E-book + Impresso"
         }
     }
+}
+
+struct LivroSelecionadoParaCarrinho {
+    let titulo: String
+    let nomeAutor: String
+    let preco: Preco
+    let imagemCapaURI: String
     
-    enum TipoDeLivro{
-        case ebook, impresso, combo
+    
+    init(titulo: String, nomeAutor: String, preco: Preco, imagemCapaURI: String) {
+        self.titulo = titulo
+        self.nomeAutor = nomeAutor
+        self.preco = preco
+        self.imagemCapaURI = imagemCapaURI
     }
 }
