@@ -45,7 +45,7 @@ enum TipoDeLivro{
     }
 }
 
-struct LivroSelecionadoParaCarrinho {
+struct LivroDTO {
     let titulo: String
     let nomeAutor: String
     let preco: Preco

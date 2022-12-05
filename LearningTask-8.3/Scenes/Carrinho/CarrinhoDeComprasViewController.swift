@@ -12,7 +12,7 @@ class CarrinhoDeComprasViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var livrosParaCarrinho: [LivroSelecionadoParaCarrinho] = [] {
+    var livrosParaCarrinho: [LivroDTO] = [] {
         didSet{
             guard let tableView = tableView else {return}
             tableView.reloadData()

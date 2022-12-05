@@ -47,11 +47,11 @@ class ComprasViewController: UIViewController {
         
         switch segue.identifier {
         case "EbookSegue":
-            destination.livrosParaCarrinho.append(LivroSelecionadoParaCarrinho(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: ebook, imagemCapaURI: imagem))
+            destination.livrosParaCarrinho.append(LivroDTO(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: ebook, imagemCapaURI: imagem))
         case "ImpressoSegue":
-            destination.livrosParaCarrinho.append(LivroSelecionadoParaCarrinho(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: impresso, imagemCapaURI: imagem))
+            destination.livrosParaCarrinho.append(LivroDTO(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: impresso, imagemCapaURI: imagem))
         case "ComboSegue":
-            destination.livrosParaCarrinho.append(LivroSelecionadoParaCarrinho(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: combo, imagemCapaURI: imagem))
+            destination.livrosParaCarrinho.append(LivroDTO(titulo: titulo, nomeAutor: nomeCompletoAutor, preco: combo, imagemCapaURI: imagem))
         default:
             fatalError("Unable to acquire necessary data to complete segue.")
         }

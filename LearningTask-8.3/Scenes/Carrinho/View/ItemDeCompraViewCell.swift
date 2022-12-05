@@ -15,7 +15,7 @@ class ItemDeCompraViewCell: UITableViewCell {
     @IBOutlet weak var tipoDeCompraLabel: UILabel!
     @IBOutlet weak var precoLabel: UILabel!
     
-    var livro: LivroSelecionadoParaCarrinho? {
+    var livro: LivroDTO? {
         didSet{
             guard let livro = livro else {return}
             capaDoLivroImageView.image = UIImage(named: livro.imagemCapaURI)
