@@ -34,6 +34,8 @@ class CarrinhoDeComprasViewController: UIViewController {
     
     private func setupViews() {
         tableView.register(CarrinhoSectionHeaderView.self, forHeaderFooterViewReuseIdentifier: CarrinhoSectionHeaderView.reuseId)
+        tableView.sectionHeaderHeight = CarrinhoSectionHeaderView.alturaBase
+        tableView.sectionHeaderTopPadding = 0
     }
 }
 
